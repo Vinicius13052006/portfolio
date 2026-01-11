@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("fotos/wp1816809.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.login-container {
+  background: #111;
+  padding: 40px;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(255, 69, 0, 0.3);
+  text-align: center;
+}
+
+.login-container h2 {
+  color: orangered;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.login-container p {
+  color: #ccc;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-box label {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+}
+
+.input-box input:focus {
+  box-shadow: 0 0 8px orangered;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  background: darkorange;
+  box-shadow: 0 0 15px orangered;
+}
+
+.extra {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.extra a {
+  color: orangered;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.extra a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+}
