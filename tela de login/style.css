@@ -105,3 +105,9 @@ body {
     width: 100%;
   }
 }
+
+/* 📱 Telas pequenas */
+@media (max-width: 360px) {
+  .login-container {
+    padding: 18px;
+  }
