@@ -1,3 +1,6 @@
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
@@ -5,75 +8,105 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  min-height: 100vh;
-  background-image: url("fotos/wp1816809.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+html, body {
+  width: 100%;
 }
 
+/* =========================
+   BODY
+========================= */
+body {
+  min-height: 100dvh;
+  background: url("fotos/wp1816809.jpg") no-repeat top center / cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  padding: 12px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
 .login-container {
-  background: #111;
-  padding: 40px;
   width: 100%;
   max-width: 380px;
+  background: rgba(17, 17, 17, 0.95);
+
+  padding: 32px;
   border-radius: 16px;
-  box-shadow: 0 0 25px rgba(255, 69, 0, 0.3);
+
+  box-shadow: 0 0 25px rgba(255, 69, 0, 0.35);
   text-align: center;
 }
 
+/* =========================
+   TÍTULO
+========================= */
 .login-container h2 {
   color: orangered;
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: clamp(24px, 6vw, 32px);
+  margin-bottom: 8px;
 }
 
 .login-container p {
   color: #ccc;
-  margin-bottom: 30px;
   font-size: 14px;
+  margin-bottom: 22px;
 }
 
+/* =========================
+   INPUTS
+========================= */
 .input-box {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   text-align: left;
 }
 
 .input-box label {
+  display: block;
   color: #aaa;
   font-size: 14px;
+  margin-bottom: 4px;
 }
 
 .input-box input {
   width: 100%;
-  padding: 12px;
-  margin-top: 6px;
-  border-radius: 8px;
+  padding: 14px;
+
+  border-radius: 10px;
   border: none;
   outline: none;
+
   background: #222;
   color: #fff;
+
+  font-size: 16px; /* evita zoom no iPhone */
 }
 
 .input-box input:focus {
   box-shadow: 0 0 8px orangered;
 }
 
+/* =========================
+   BOTÃO
+========================= */
 .login-btn {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   margin-top: 10px;
+
   background: orangered;
   color: #fff;
+
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
+
   font-size: 16px;
   font-weight: 600;
+
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -83,8 +116,11 @@ body {
   box-shadow: 0 0 15px orangered;
 }
 
+/* =========================
+   LINKS
+========================= */
 .extra {
-  margin-top: 20px;
+  margin-top: 18px;
   font-size: 14px;
   color: #aaa;
 }
@@ -99,15 +135,31 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+/* =========================
+   MEDIA QUERIES
+========================= */
+
+/* 📱 celulares pequenos */
+@media (max-width: 360px) {
   .login-container {
-    margin: 20px;
+    padding: 20px;
+  }
+
+  .login-container h2 {
+    font-size: 22px;
   }
 }
 
-
-/* 📱 Telas pequenas */
-@media (max-width: 360px) {
+/* 📱 celulares médios */
+@media (min-width: 361px) and (max-width: 480px) {
   .login-container {
-    padding: 18px;
+    padding: 26px;
   }
+}
+
+/* 📱 tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .login-container {
+    padding: 30px;
+  }
+}
