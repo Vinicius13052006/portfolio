@@ -1,0 +1,523 @@
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Estilo do corpo da página */
+body {
+  background-color: #f1f1f1;
+}
+
+/* Cabeçalho fixo */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 10%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 28px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  color: orangered;
+  text-shadow: 0 0 15px orangered;
+  transform: scale(1.05);
+}
+
+span {
+  color: orangered;
+  text-decoration: none;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin: 0 15px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: orangered;
+  border-bottom: 3px solid orangered;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+.contato {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.contato:hover {
+  background-color: orangered;
+  color: white;
+  box-shadow: 0 0 15px orangered;
+}
+
+/* Seção inicial */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  padding: 120px 10% 30px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-content h3 {
+  font-size: 36px;
+  color: orangered;
+}
+
+.home-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.home-content p {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.btn-box {
+  display: flex;
+  gap: 1em;
+}
+.contato{
+  color: orangered;
+  box-shadow: #000;
+}
+
+.btn-1, .btn-2 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-1 {
+  background-color: orangered;
+  color: white;
+}
+
+.btn-1:hover {
+  background-color: darkorange;
+}
+
+.btn-2 {
+  background-color: transparent;
+  color: orangered;
+  border: 2px solid orangered;
+}
+
+.btn-2:hover {
+  background-color: orangered;
+  color: white;
+}
+
+.img-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Seção sobre */
+.sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12% 8%;
+  gap: 10em;
+  background: black;
+  color: white;
+}
+
+.sobre-img img {
+  width: 400px;
+  box-shadow: 0 0 25px orangered, 0 0 50px orangered;
+  border-radius: 50%;
+}
+
+.sobre-content h2 {
+  text-align: left;
+  color: white;
+  font-size: 42px;
+}
+
+.sobre-content h3 {
+  font-size: 62px;
+  color: white;
+}
+
+.sobre-content p {
+  color: white;
+  font-size: 20px;
+  margin: 2em 0 3em;
+}
+
+/* Seção de experiência */
+.experiencia {
+  padding: 60px 10%;
+  background-color: #3b3b3b;
+  color: #f9f9f9;
+}
+
+.experiencia-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experiencia-content .heading {
+  font-size: 36px;
+  color: orangered;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.experiencia-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #4a4a4a;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.experiencia-item h3 {
+  font-size: 24px;
+  color: orangered;
+  margin-bottom: 10px;
+}
+
+.experiencia-item p {
+  font-size: 16px;
+  color: #e0e0e0;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Formulário de contato */
+.contato-forma h2 {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.contato-forma form {
+  max-width: 50em;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.contato-forma form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contato-forma form .input-box input,
+.contato-forma form textarea {
+  width: 100%;
+  padding: 1.5em;
+  font-size: 18px;
+  color: black;
+  background-color: rgb(241, 241, 241);
+  border-radius: .8rem;
+  margin: 1rem 0;
+  resize: none;
+}
+
+.contato-forma input[type="submit"] {
+  background-color: orangered;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contato-forma input[type="submit"]:hover {
+  background-color: darkorange;
+}
+
+/* Seção de projetos */
+.projetos {
+  padding: 50px 10%;
+  background-color: #000;
+  color: #fff;
+}
+
+.projetos .heading {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.projetos .heading span {
+  color: orangered;
+}
+
+.projetos-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.projeto {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.projeto img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.projeto h3 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+}
+
+.projeto p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.projeto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px orangered;
+}
+
+/* Rodapé */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: black;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: white;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: white;
+  border: 2px solid orangered;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
+  transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+  transform: scale(1.2) translate(-10px);
+  color: orangered;
+  border: 2px solid orangered;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a {
+  color: white;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: orangered;
+  border-bottom: 3px solid orangered;
+}
+
+/* Scrollbars customizadas */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .home {
+      flex-direction: column;
+      padding: 60px 5%;
+  }
+
+  .sobre {
+      flex-direction: column;
+      gap: 2em;
+      padding: 60px 5%;
+  }
+
+  .sobre-img img {
+      width: 250px;
+  }
+
+  .header {
+      padding: 15px 5%;
+  }
+
+  .navbar a {
+      font-size: 16px;
+      text-decoration: none;
+  }
+
+  .btn-box {
+      flex-direction: column;
+  }
+
+  .btn-1, .btn-2 {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .experiencia-item {
+      padding: 15px;
+  }
+
+  .projetos-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .projeto {
+      max-width: 90%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .header {
+      padding: 10px 2%;
+  }
+
+  .logo {
+      font-size: 20px;
+  }
+
+  .navbar a {
+      font-size: 14px;
+      text-decoration: none;
+  }
+
+  .home-content h1 {
+      font-size: 28px;
+      text-decoration: none;
+  }
+
+  .home-content p {
+      font-size: 14px;
+      text-decoration: none;
+  }
+
+  .img-box img {
+      width: 100%;
+  }
+
+  .sobre-img img {
+      width: 100%;
+  }
+
+  .sobre-content h2 {
+      font-size: 28px;
+  }
+
+  .sobre-content h3 {
+      font-size: 36px;
+  }
+
+  .sobre-content p {
+      font-size: 16px;
+      text-decoration: none;
+  }
+
+  .contato-forma form {
+      padding: 0 5%;
+  }
+
+  .projeto {
+      padding: 15px;
+  }
+}
